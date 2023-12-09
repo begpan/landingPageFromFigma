@@ -1,0 +1,320 @@
+/* renk degıskenleri */
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --brand-primary: #4caf4f;
+  --brand-secondary: #263238;
+  --brand-info: #2194f3;
+  --neutral-silver: #f5f7fa;
+  --text-gray-900: #18191f;
+  --neutral-d-grey: #4d4d4d;
+  --neutral-grey: #717171;
+  --defoult-white: #ffffff;
+
+  /* font sizes */
+  --font-size-64: 64px;
+  --font-size-36: 36px;
+  --font-size-28: 28px;
+  --font--size-16: 16px;
+  --font--size-14: 14px;
+  /* line height */
+  --lineheight-76: 76px;
+  --lineheight-44: 44px;
+  --lineheight-36: 36px;
+  --lineheight-24: 24px;
+  --lineheight-20: 20px;
+  /* font weight */
+  --font-weight-700: 700;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--defoult-white);
+  overflow-x: hidden;
+  font-family: "Electrolize", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 105px;
+  padding-right: 120px;
+  padding-top: 22px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 50px;
+  background-color: var(--neutral-silver);
+}
+
+.header-logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  font-size: var(--font--size-16);
+  font-weight: var(--font-weight-500);
+  line-height: var(--lineheight-24);
+  color: var(--text-gray-900);
+  white-space: nowrap;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 104px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  flex-wrap: wrap;
+  background-color: var(--neutral-silver);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-left {
+  max-width: 400px;
+}
+
+.hero-left-big {
+  font-size: var(--font-size-64);
+  font-weight: var(--font-weight-600);
+  line-height: var(--lineheight-76);
+  color: var(--neutral-d-grey);
+}
+.hero-left-big span {
+  color: var(--brand-primary);
+}
+
+.hero-left-light {
+  color: var(--neutral-grey);
+  font-size: var(--font--size-16);
+}
+
+.frame-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.membership-organizations {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  padding: 24px 32px;
+}
+
+.membership-organizations p {
+  text-align: center;
+  color: var(--neutral-grey);
+  font-size: var(--font--size-14);
+  font-weight: var(--font-weight-400);
+  line-height: var(--lineheight-20);
+}
+
+.membership-organizations h4 {
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--neutral-d-grey);
+  font-size: var(--font-size-28);
+  font-weight: var(--font-weight-700);
+  line-height: var(--lineheight-36);
+}
+
+.unlock-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 83px;
+  padding-bottom: 83px;
+  flex-wrap: wrap;
+}
+
+.unlock-section h4 {
+  color: var(--neutral-grey);
+  font-size: var(--font-size-36);
+  font-weight: var(--font-weight-600);
+  line-height: var(--lineheight-44);
+}
+
+.unlock-text {
+  color: var(--neutral-grey);
+  font-size: var(--font--size-14);
+  font-weight: var(--font-weight-400);
+  line-height: var(--lineheight-20);
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.unlock-section-right {
+  width: 660px;
+  padding-right: 60px;
+}
+
+.achievements-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 0;
+  background-color: var(--neutral-silver);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  flex-wrap: wrap;
+}
+
+.achievements-section-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+.achievements-section-left {
+  width: 540px;
+}
+
+.achievements-section-left h4 {
+  color: var(--neutral-d-grey);
+  font-size: var(--font-size-36);
+  font-weight: 600;
+  line-height: var(--lineheight-44);
+}
+
+.achievements-section-left h4:nth-child(2) {
+  color: var(--brand-primary);
+}
+
+.achievements-section-left p {
+  color: var(--text-gray-900);
+  font-size: var(--font--size-16);
+  font-weight: var(--font-weight-400);
+  line-height: var(--lineheight-24);
+}
+
+.achievements-section-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.col-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.col-item h5 {
+  color: var(--neutral-d-grey);
+  font-size: var(--font-size-28);
+  font-weight: var(--font-weight-700);
+  line-height: var(--lineheight-36);
+}
+
+.col-item p {
+  color: var(--neutral-grey);
+  font-size: var(--font--size-16);
+  font-weight: var(--font-weight-400);
+  line-height: var(--lineheight-24);
+}
+
+
+.frame-15-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 95px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ width: 370px;
+
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  background-color: var(--neutral-silver);
+  padding: 16px;
+  margin-top: -50px;
+  width: 317px;
+  border-radius: 8px;
+}
+
+/* ???? */
+.card img{
+  margin-bottom: 40px;
+}
+
+.card-text{
+  text-align: center;
+  color: var(--neutral-grey);
+  font-size: var(--font--size-16);
+}
+
+footer {
+
+  margin-top: 100px;
+  border-top: 1px solid var(--ana-renk);
+}
+footer .footer-start {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  background-color: var(--neutral-silver);
+  padding: 20px;
+
+
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+footer .footer-start .footer-area {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-start .footer-area a {
+  text-decoration: none;
+  color: gray;
+}
+
+footer .Bottom {
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid var(--ana-renk);
+  padding: 20px;
+}
